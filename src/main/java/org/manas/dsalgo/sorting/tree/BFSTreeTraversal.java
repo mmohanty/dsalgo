@@ -1,5 +1,6 @@
 package org.manas.dsalgo.sorting.tree;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class BFSTreeTraversal {
@@ -52,6 +53,6 @@ public class BFSTreeTraversal {
 			return;
 		}
 		
-		Queue<Node<Integer>> queue = new  LinkedLi
+		Queue<Node<Integer>> queue = new  LinkedList<Node<Integer>>();
 	}
 }
