@@ -46,6 +46,10 @@ public class BFSTreeTraversal {
         
        System.out.println("Level order traversal of binary tree is ");
        traverseTreeThroughRecurssion(root);
+       
+       
+       System.out.println("Level order traversal of binary tree is ");
+       printTreeThroughQueue(root);
     }
 	
 	public static void printTreeThroughQueue(Node<Integer> root){
@@ -54,5 +58,16 @@ public class BFSTreeTraversal {
 		}
 		
 		Queue<Node<Integer>> queue = new  LinkedList<Node<Integer>>();
+		queue.add(root);
+		while(!queue.isEmpty()) {
+			Node<Integer> node = queue.poll();
+			System.out.println(node.data);
+			if(node.left != null) {
+				queue.add(node.left);
+			}
+			if(node.right != null) {
+				queue.add(node.right);
+			}
+		}
 	}
 }
