@@ -25,4 +25,16 @@ public class TreeDiameter {
 		
 		return Math.max(lHeight+1, rHeight+1);
 	}
+	public static void main(String args[])
+    {
+        /* creating a binary tree and entering the nodes */
+		Node<Integer> root = new Node<>(1);
+        root.left = new Node<Integer>(2);
+        root.right = new Node<Integer>(3);
+        root.left.left = new Node<Integer>(4);
+        root.left.right = new Node<Integer>(5);
+ 
+        System.out.println("The diameter of given binary tree is : "
+                           + findDiameter(root));
+    }
 }
