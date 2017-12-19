@@ -49,7 +49,7 @@ public class PalindromNumberCreater {
 		}
 	}
 
-	// TODO handle situation for odd size palindrom and middle element is the
+	// handle situation for odd size palindrom and middle element is the
 	// highest one.
 	private static void swap(int[] arr, int element, int left, int right) {
 

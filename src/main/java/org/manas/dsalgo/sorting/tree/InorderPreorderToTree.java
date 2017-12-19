@@ -15,7 +15,7 @@ package org.manas.dsalgo.sorting.tree;
 public class InorderPreorderToTree {
 
 	private static int preorderIndex = 0;
-	public static Node<Character> makeTreeThroughRecursive(char[] inorder, char[] preorder, int low, int high, int size){
+	public static Node<Character> buildTreeThroughRecursive(char[] inorder, char[] preorder, int low, int high, int size){
 		if(low > high || preorderIndex > size){
 			return null;
 		}
@@ -28,8 +28,8 @@ public class InorderPreorderToTree {
 			return root;
 		}
 		
-		root.left = makeTreeThroughRecursive(inorder, preorder, low, indexOfNodeInorderTree-1, size);
-		root.right = makeTreeThroughRecursive(inorder, preorder, indexOfNodeInorderTree+1, high, size);
+		root.left = buildTreeThroughRecursive(inorder, preorder, low, indexOfNodeInorderTree-1, size);
+		root.right = buildTreeThroughRecursive(inorder, preorder, indexOfNodeInorderTree+1, high, size);
 		return root;
 	}
 	private static int search(char[] inorder, int low, int high, Character data) {
@@ -46,7 +46,7 @@ public class InorderPreorderToTree {
         char in[] = new char[]{'D', 'B', 'E', 'A', 'F', 'C'};
         char pre[] = new char[]{'A', 'B', 'D', 'E', 'C', 'F'};
         int len = in.length;
-        Node<Character> root = makeTreeThroughRecursive(in, pre, 0, len - 1, pre.length);
+        Node<Character> root = buildTreeThroughRecursive(in, pre, 0, len - 1, pre.length);
   
         // building the tree by printing inorder traversal
         System.out.println("Inorder traversal of constructed tree is : ");
