@@ -37,6 +37,10 @@ public class DFSTreeTraversalThroughIterative<T> {
 		}
 	}
 	
+	public void postOrderTraversal(Node<T> node){
+		//TODO implement using one stack.
+	}
+	
 	public static void main(String args[]) {
 		DFSTreeTraversalThroughIterative<Integer> tree = new DFSTreeTraversalThroughIterative<>();
         Node<Integer> root = new Node<>(10);
