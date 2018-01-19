@@ -1,7 +1,7 @@
 package org.manas.dsalgo.sorting.tree;
 
 /**
- * wo trees are called isomorphic if one of them can be obtained from other by a series of flips, 
+ * Two trees are called isomorphic if one of them can be obtained from other by a series of flips, 
  * i.e. by swapping left and right children of a number of nodes. Any number of nodes at any level can have 
  * their children swapped. 
  * Two empty trees are isomorphic.
@@ -63,13 +63,13 @@ public class IsomerphicTree {
         root1.left.right.right = new Node<Integer>(8);
   
         Node<Integer> root2 = new Node<>(1);
-        root2.left = new Node<Integer>(3);
-        root2.right = new Node<Integer>(2);
-        root2.right.left = new Node<Integer>(4);
-        root2.right.right = new Node<Integer>(5);
-        root2.left.right = new Node<Integer>(6);
-        root2.right.right.left = new Node<Integer>(8);
-        root2.right.right.right = new Node<Integer>(7);
+        root2.left = new Node(3);
+        root2.right = new Node(2);
+        root2.right.left = new Node(4);
+        root2.right.right = new Node(5);
+        root2.left.right = new Node(6);
+        root2.right.right.left = new Node(8);
+        root2.right.right.right = new Node(7);
   
         if (isIsomorphic(root1, root2) == true)
             System.out.println("Yes");

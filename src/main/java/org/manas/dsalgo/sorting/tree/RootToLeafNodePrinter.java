@@ -7,7 +7,6 @@ public class RootToLeafNodePrinter<T> {
 	public void printAllNodeFromRootToLeafNode(Node<T> root, T[] track, int position) {
 
 		if (root == null) {
-			// print all data
 			return;
 		}
 

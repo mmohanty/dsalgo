@@ -7,11 +7,11 @@ package org.manas.dsalgo;
  * uncomment this if you want to read input.
 //imports for BufferedReader
 */
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+//import java.io.BufferedReader;
+//import java.io.InputStreamReader;
 
 //import for Scanner and other utility classes
-import java.util.*;
+//import java.util.*;
 
 
 public class TestClass {
@@ -24,8 +24,8 @@ public class TestClass {
          * Use either of these methods for input
         */
         //BufferedReader
-       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-       Scanner scanner = new Scanner(System.in);
+       //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+       //Scanner scanner = new Scanner(System.in);
         String line1 = "1,2,3,4,5,6,10,8";//Elements
         String line2 = "1";//i
         String line3 = "1";//j
@@ -38,7 +38,6 @@ public class TestClass {
         Integer []auxArray = new Integer[tokens.length];
 
         int auxIndex = 0;
-        boolean isRetaining = true;
 
         for(int index = 0 ; index < tokens.length  ; ){
 
@@ -66,14 +65,14 @@ public class TestClass {
     }
 
     class Node{
-        private int data;
-        private Node next;
+        //private int data;
+        //private Node next;
 
         Node(int data){
-            this.data = data;
+           // this.data = data;
         }
         public void setNext(Node node){
-            this.next = node;
+           // this.next = node;
         }
     }
 }
