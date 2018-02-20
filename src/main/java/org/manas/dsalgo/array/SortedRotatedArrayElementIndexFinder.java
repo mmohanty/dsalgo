@@ -55,7 +55,7 @@ public class SortedRotatedArrayElementIndexFinder {
         int arr[] = {4, 5, 6, 7, 8, 9, 1, 2, 3};
         int n = arr.length;
         int key = 6;
-        int i = findElement(arr, key,0, n-1);
+        int i = findElement(arr, key, 0, n-1);
         if (i != -1)
             System.out.println("Index: " + i);
         else

@@ -39,7 +39,7 @@ public class NextGreaterElementFinder {
 				 */
 				while (element < next) {
 					System.out.println(element + " --> " + next);
-					if (stack.isEmpty() == true)
+					if (stack.isEmpty())
 						break;
 					element = stack.pop();
 				}

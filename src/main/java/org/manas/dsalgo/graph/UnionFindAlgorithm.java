@@ -12,6 +12,7 @@ public class UnionFindAlgorithm {
 
 	
 	static class Graph{
+		@SuppressWarnings("unused")
 		private int v;
 		private LinkedList<Integer> []adj;
 		
