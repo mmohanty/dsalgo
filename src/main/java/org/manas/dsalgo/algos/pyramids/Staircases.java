@@ -10,10 +10,10 @@ public class Staircases {
         cases.printStairCase(4);
     }
 
-    private void printStairCase(int rows) {
-        for(int i = 1; i <= rows ; i++){
-            for(int j = 1; j <= rows ; j++){
-                if(i+j > rows){
+    private void printStairCase(int steps) {
+        for(int i = 1; i <= steps ; i++){
+            for(int j = 1; j <= steps ; j++){
+                if(i+j > steps){
                     System.out.print("#");
                 }else{
                     System.out.print(" ");

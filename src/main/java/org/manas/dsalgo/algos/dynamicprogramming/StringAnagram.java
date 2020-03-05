@@ -17,7 +17,7 @@ public class StringAnagram {
         }
         int sum1 = 0;
         int sum2 = 0;
-        int prime =7;
+        int prime = 7;
 
         for(int i = 0; i < str1.length(); i ++){
             sum1 += prime * Integer.valueOf(str1.charAt(i));
