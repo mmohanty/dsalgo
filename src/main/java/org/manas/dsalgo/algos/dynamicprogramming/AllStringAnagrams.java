@@ -4,11 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * An anagram is a word or phrase formed by rearranging the letters in another word or phrase.
+ * Example: Input :: abc
+ * Output: abc, acb, bac, bca, cab, cba
  * Created by mohanty on 01-10-2016.
  */
 public class AllStringAnagrams {
 
     public static void main(String[] args) {
+
         String str = "abcd";
         AllStringAnagrams anagrams = new AllStringAnagrams();
         List<String> list = new ArrayList<String>();
