@@ -3,7 +3,7 @@ package org.manas.dsalgo.algos.matrix;
 /**
  * Created by mohanty on 13-08-2016.
  */
-public class SpiralMatrix {
+public class SpiralMatrixNotWorksForAllScenario {
     public static void main(String[] args) {
         int [][]matrix = new int[][]{
                                         {1,2,3,4},

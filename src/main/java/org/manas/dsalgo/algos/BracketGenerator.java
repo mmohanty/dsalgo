@@ -1,13 +1,21 @@
 package org.manas.dsalgo.algos;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by mohanty on 07-09-2016.
  */
 public class BracketGenerator{
 
-    public void dfs(ArrayList<String> result, String s, int left, int right){
+    public static void main(String[] args) {
+        BracketGenerator bracketGenerator = new BracketGenerator();
+        ArrayList<String> result = new ArrayList<String>();
+        int n = 2;
+        bracketGenerator.dfs(result, "", n, n);
+        System.out.println(result);
+    }
+    public void dfs(List<String> result, String s, int left, int right){
         if(left > right)
             return;
 
